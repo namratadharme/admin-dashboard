@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9f9;
+  --text-primary: #00000099;
+  --text-secondary: #fff;
+  --active-text: #000000DE; 
+  --banner-gradient: linear-gradient(45deg, rgb(0, 16, 100) 0%, rgb(95, 95, 196) 50%, rgb(55, 42, 140) 100%);
+  --button-gradient: #4f3cc9;
+  --icon-color: gray;
+  --header-gradient: #fff;
+  --card-gradient: #fff;
+  --box-gradient: rgb(40, 53, 147);
+  --heading-gradient: #283593;
+  --border-color: rgb(163, 163, 163);
+  --border-radius: 10px;
+  --icon2-color: rgb(40, 53, 147);
+  --input-bg: #0000000A;
+  --input-text: #333333;
+  --hyperlink-color: #551a8b;
+  --header-content:#4f3cc9;
+  --hover-color: #fafafa;
+  --border-bottom: #eee;
+  --button-grp: rgb(224, 224, 224);
+
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1f1e1e;
+  --bg-secondary: #0b0b0b;
+  --text-primary: #ffffffb3;
+  --text-secondary: #000000DE;
+  --active-text: #fff;
+  --button-gradient:#90caf9 ;
+  --card-gradient: rgb(33, 33, 33);
+  --icon-color: #ffffffb3;
+  --header-gradient: rgba(255, 255, 255, 0.382);
+  --banner-gradient: linear-gradient(45deg, rgb(175, 130, 79) 0%, rgb(251, 199, 142) 50%, rgb(100, 141, 174) 100%);
+  --box-gradient: #fbba72;
+  --heading-gradient: #fbba72;
+  --border-color: transparent;
+  --border-radius: 5px;
+  --icon2-color: #fbba72;
+  --input-bg: #323030;
+  --input-text: #ffffff;
+  --hyperlink-color: #90caf9;
+  --header-content: #90caf9;
+  --hover-color: #615d5d;
+    --button-grp: rgb(25, 25, 25);
+  --border-bottom: #575757;
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px var(--input-bg) inset !important;
+  -webkit-text-fill-color: var(--input-text) !important;
+    caret-color: var(--input-text);
+    transition: background-color 9999s ease-in-out 0s;
+ 
+}
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+ .stats-card.no-borderRadius {
+  border-radius: 10px 10px 0 0;
+}
+

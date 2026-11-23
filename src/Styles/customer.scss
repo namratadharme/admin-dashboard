@@ -1,0 +1,126 @@
+.customers-page{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column; 
+}
+.customer-main-content{
+   display: grid;
+   grid-template-columns: 1fr 4fr;
+   width: 100%;
+   gap: 15px;
+
+    .customer-table{
+       min-width: 0;
+    }
+}
+.customer-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 5px;
+
+     
+.right-customer-data {
+  display: flex;
+  gap: 5px;
+  font-size: 13px;
+  color: var(--button-gradient);
+  font-weight: 500;
+} 
+}
+.queries{
+  padding-left: 20px;
+}
+.customer-filter{
+  display: flex;
+  flex-direction: column;
+  border: 0.1px solid var(--border-color);
+  border-radius: 10px;
+  gap: 15px;
+  min-width: 0;
+  max-height: 800px;
+  padding: 5px;
+  color: var(--input-text); 
+  background-color: var(--bg-primary);
+}
+.filter-header{
+  display: flex;
+  gap: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+
+}
+.filter-section{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  width: 200px;
+}
+
+.queries{
+  span{
+       display: flex;
+       align-items: center;
+       font-size: 13px;
+       line-height: 1.9;
+       letter-spacing: 1.5px;
+       font-weight: 400;
+       gap: 10px;
+       color: var(--input-text);
+  }
+}
+.filter-title{
+  line-height: 1.7;
+  letter-spacing: 1.4px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.filter-options{
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 5px;
+}
+
+.filter-options > .filter-textdata{
+  display: flex;
+  padding: 5px;
+  cursor: pointer;
+}
+.filter-textdata:hover{
+  background-color: #e2e2e2de;
+  padding: 5px;
+  border-radius: 5px;
+}
+.filter-textdataselected-filter {
+  background-color: #e1e2f7;
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.customer-icon{
+   font-size: 13px;
+}
+
+@media(max-width:768px){
+  .customer-main-content{
+     display: flex;
+     flex-direction: column;
+  }
+  .customer-filter{
+    display: none;
+  }
+  .pagination{
+    display: none;
+  }
+  .customer-icon{
+    font-size: 20px;
+  }
+
+}

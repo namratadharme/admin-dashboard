@@ -1,0 +1,120 @@
+.table-container {
+  width: 100%;
+  background: var(--bg-primary);
+  border: 0.1px solid var(--border-color);
+  border-radius: 5px;
+  overflow-x: auto;
+  min-width: 0;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout:auto;
+  font-size: clamp(11px, 1vw, 14px);
+
+}
+thead{
+    width: 100%;
+    border-bottom: 0.1px solid var(--border-bottom);
+    background: var(--bg-secondary);
+    padding: clamp(5px, 0.8vw, 12px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.table th {
+   text-align: start;
+   font-size: inherit;
+   font-weight: 600;
+   color: #6b7280;
+   border-bottom: 0.1px solid var(--border-bottom);
+   white-space: nowrap;
+   padding: clamp(5px, 0.8vw, 12px);
+   overflow: hidden;
+   text-overflow: ellipsis;
+
+}
+
+.table td {
+  text-align: start;
+  font-size: inherit;
+  color: var(--text-primary);
+  border-bottom: 0.1px solid var(--border-bottom);
+  white-space: nowrap;
+  padding: clamp(5px, 0.8vw, 8px);
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.review-table-row {
+    border-left: 3px solid green;
+}
+
+.table-row:hover {
+  background: var(--hover-color);
+  cursor: pointer;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.checkbox-cell {
+  width: 130px;
+  min-width: 0;
+  text-align: start;
+  height: 100%;
+  border-bottom: none;
+      
+     div{
+        display: flex;
+        gap: 10px;
+     }
+}
+
+.checkbox-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.checkbox-date input {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.user-info {
+ display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.user-info img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #82858a;
+}
+
+.user-info .user-name {
+  font-weight: 400;
+  color: var(--button-gradient);
+  border-bottom: 1px solid #807ba0;
+}
+.comment-cell{
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 768px){
+  .table-container{
+    border-radius: 10px;
+  }
+  .table{
+    display: none;
+  }
+
+}

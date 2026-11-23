@@ -1,0 +1,38 @@
+.segments-table-wrapper {
+  border: 0.1px solid var(--border-color);
+  overflow: hidden;
+  background: var(--bg-primary);
+  border-radius: 10px;
+
+}
+.segments-table {
+  width: 100%;
+  background: var(--bg-primary);
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+.segments-table tr{
+  border-bottom: 0.1px solid rgb(103, 103, 103);
+}
+
+.segments-table th,
+.segments-table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.segments-table th {
+  font-size: 14px;
+  font-weight: 600;
+}
+.segments-table td {
+  font-size: 13px;
+ 
+}
+.people-grp{
+    display: flex;
+    gap: 10px;
+    color: var(--button-gradient);
+    cursor: pointer;  
+}
+

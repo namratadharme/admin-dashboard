@@ -1,0 +1,28 @@
+.revenue-card {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-primary);
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+
+
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin: 0 0 15px 0;
+  }
+
+  .chart-wrapper {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px){
+  .revenue-card{
+    display: none;
+  }
+}
